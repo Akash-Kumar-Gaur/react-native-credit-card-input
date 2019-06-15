@@ -107,7 +107,7 @@ export default class CreditCardInput extends Component {
 
     const scrollResponder = this.refs.Form.getScrollResponder();
     const nodeHandle = ReactNative.findNodeHandle(this.refs[field]);
-
+    this.refs[field].focus();
     // NativeModules.UIManager.measureLayoutRelativeToParent(nodeHandle,
     //   e => { throw e; },
     //   x => {
